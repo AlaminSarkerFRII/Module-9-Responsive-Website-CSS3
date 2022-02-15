@@ -37,12 +37,12 @@ document.getElementById('add-btn').addEventListener('click',function(){
   const liList =  document.getElementById('content-list'); // where is parent...
   liList.appendChild(li); // add child in parent nodes
 
-
+// error handle......
   
-
-
-
-    console.log(inputValue);
+if(inputValue == 5){
+   const btnDisable = document.getElementById('add-btn').disabled = true;
+   btnDisable.style.color ='muted';
+}
 
 })
 
