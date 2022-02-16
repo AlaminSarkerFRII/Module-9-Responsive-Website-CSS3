@@ -1,27 +1,25 @@
 //change top player header
 
- const topPlayers = document.getElementById('top-player').innerHTML = 'Top Player Board';
-   document.getElementById('top-player').style.color = 'red';
+ const topPlayers = document.getElementById('top-player');
+ topPlayers.innerHTML = 'Top Player Board';
+ topPlayers.style.color = 'tomato';
+   
 
-/* document.getElementById('top-player').addEventListener('click',function() {
+//blog section
 
-const topPlayer = document.getElementById('top-player').innerHTML = 'Top';
-topPlayer.style.color="red";
-
-}) */
-
-// top players list............
-
-document.getElementById('players-card').style.backgroundColor= "rgba(2,200,300,100)";
+   document.getElementById('top-blog').innerHTML = 'Blogs Section';
 
 
-// function function1() {
-//     var ul = document.getElementById("list");
-//     var li = document.createElement("li");
-//     li.appendChild(document.createTextNode("Four"));
-//     ul.appendChild(li);
-//   }
+// access top players Name .............
 
+const PlayersName = document.getElementsByClassName('player-name');
+for(const player of PlayersName){
+  player.style.fontSize = "20px";
+  player.style.backgroundColor = "rgba(189, 153, 156, 0.8)";
+}
+
+
+// input field..........
 
 document.getElementById('add-btn').addEventListener('click',function(){
     //get input ...
@@ -39,12 +37,12 @@ document.getElementById('add-btn').addEventListener('click',function(){
 
 // error handle......
   
-if(inputValue == 5){
+if(inputValue==5){
    const btnDisable = document.getElementById('add-btn').disabled = true;
-   btnDisable.style.color ='muted';
+   
 }
 
-})
+});
 
 
 
